@@ -1,6 +1,6 @@
 if has('autocmd')
     augroup RE_SOURCE_ON_WRITE
-        autocmd! BufWritePost <buffer> source <afile>
+        autocmd! BufWritePost 00-settings.vim source <afile>
     augroup END
 endif
 
