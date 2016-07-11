@@ -55,12 +55,14 @@ set smartcase
 set smartindent
 set spellfile=$HOME/.vim/spell/local.en.add
 set spellsuggest=best,5
-set splitbelow splitright
+set splitbelow
+set splitright
 set nostartofline
 set statusline=%m%f:%l/%L\ %P\ %<<%-3b\ 0x%-2B>\ %y%r%w%=b:%n\ w:%{winnr()}
 set switchbuf=useopen
 set tabstop=4
 set tags=tags
+set undofile
 set undodir=$HOME/.vim/undo
 set viminfo='100,<50,s10,h,n~/.vim/viminfo
 set whichwrap=b,s,<,>,[,]
