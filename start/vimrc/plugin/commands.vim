@@ -16,3 +16,4 @@ command! -nargs=0 Restore  :let [s:lines, s:columns, &lines, &columns] = [&lines
 command! -nargs=0 Merge /^\(<\|=\|>\)\{7}\ze\(\s\|$\)/
 
 " vim:filetype=vim sw=4 foldmethod=marker tw=78 expandtab:
+

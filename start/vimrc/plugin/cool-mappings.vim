@@ -5,7 +5,7 @@ noremap  Q !!$SHELL<CR>
 
 " fortune philosoraptor
 
-" echo "this is my actual password" | figlet | base64 | base64 -d
+" echo "actual password" | figlet | base64 | base64 -d
 
 "" " execute the current selection as shell commands
 vnoremap Q  !$SHELL<CR>
@@ -13,14 +13,27 @@ vnoremap Q  !$SHELL<CR>
 " {
 " echo True story: | figlet -f small -c
 " 	cat <<-: | WIDTH=30 pms quote 
-" 		You have nothing to fear but fear itself.
-" 		-- Theodore Rooseveldt, Esq.
+" 		Use the Force, Harry!
+" 		-- Gandalf
 " 		:
 " } | pms centerBlock
 
+function <SID>Ranger(c)
+	let l:leader = '\'
+	if exists('mapleader')
+		let l:leader = mapleader
+	endif
+	if getcmdpos() != 1
+		return l:leader . a:c
+	else
+		return "'[,']"
+	endif
+endfunction
+
 " <leader>: begins command mode with the '[,'] range, á là {Visual}:
 noremap  <leader>: :'[,']
-cnoremap <leader>:  '[,']
+cnoremap <expr> <leader>:  <SID>Ranger(':')
+
 
 "" Make a non-paragraph change bounded by '[ and ']
 " ls /dev/*
