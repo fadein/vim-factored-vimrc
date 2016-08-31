@@ -2,7 +2,8 @@ if ! has('user_commands')
     finish
 endif
 
-command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis 
+            \ | wincmd p | diffthis
 command! -nargs=1 -complete=help Help      :help <args>
 command! -nargs=1 -complete=help HElp      :help <args>
 command! -nargs=* -bar -bang Ls            :ls<bang>

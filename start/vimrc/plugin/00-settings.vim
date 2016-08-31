@@ -27,6 +27,7 @@ set nocindent
 set comments=s1:/*,mbx:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:- " is this right?
 set nocompatible
 set cpoptions=BadFAces
+set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
 set cursorline
 set directory^=/dev/shm
 set noexpandtab
@@ -58,12 +59,12 @@ set spellsuggest=best,5
 set splitbelow
 set splitright
 set nostartofline
-set statusline=%m%f:%l/%L\ %P\ %<<%-3b\ 0x%-2B>\ %y%r%w%=b:%n\ w:%{winnr()}
+set statusline=%m%f\ \ %y%r%w\ %=%l/%L\ %P
 set switchbuf=useopen
 set tabstop=4
 set tags=tags
-set undofile
 set undodir=$HOME/.vim/undo
+set undofile
 set viminfo='100,<50,s10,h,n~/.vim/viminfo
 set whichwrap=b,s,<,>,[,]
 set nowildmenu
