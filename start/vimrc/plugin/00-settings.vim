@@ -28,6 +28,7 @@ set comments=s1:/*,mbx:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:- " is this right?
 set nocompatible
 set cpoptions=BadFAces
 set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
+set cscopetag
 set cursorline
 set directory^=/dev/shm
 set noexpandtab
@@ -49,6 +50,7 @@ set mouse=
 set nrformats=hex
 set number
 set ruler
+set scrolloff=0
 set shiftwidth=4
 set shortmess=aoOTt
 set showcmd
