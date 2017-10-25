@@ -1,6 +1,7 @@
 "" " execute the current line of text as a shell command
 noremap  Q !!$SHELL<CR>
 
+
 " date
 
 " fortune philosoraptor
@@ -18,7 +19,7 @@ vnoremap Q  !$SHELL<CR>
 " 		:
 " } | pms centerBlock
 
-function <SID>Ranger(c)
+function! <SID>Ranger(c)
 	let l:leader = '\'
 	if exists('mapleader')
 		let l:leader = mapleader
@@ -47,5 +48,12 @@ cnoremap <Esc>v <C-\>esubstitute(getline('.'), '^\s*\(' . escape(substitute(&com
 " Use <C-L> to clear search highlighting and redraw the screen
 noremap  <silent> <C-l>      :nohlsearch <bar> redraw!<CR>
 inoremap <silent> <C-l> <C-O>:nohlsearch <bar> redraw!<CR>
+
+" Prevent F1 from bringing up the help screen
+
+map <F1>  <Nop>
+imap <F1> <Nop>
+cmap <F1> <Nop>
+
 
 " vim:filetype=vim sw=4 foldmethod=marker tw=78 noexpandtab:
