@@ -27,7 +27,7 @@ set nocindent
 set comments=s1:/*,mbx:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:- " is this right?
 set nocompatible
 set cpoptions=BadFAces
-set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
+set cscopequickfix=s-,c-,d-,i-,t-,e-
 set cscopetag
 set cursorline
 set directory^=/dev/shm
