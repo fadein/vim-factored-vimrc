@@ -31,7 +31,8 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-,a-
 set cscopetag
 set cursorline
 set directory^=/dev/shm
-set noexpandtab
+set expandtab
+set nofoldenable
 set formatoptions=tcqron
 set grepformat=%f:%l:%m
 set grepprg=grep\ -HnEi
