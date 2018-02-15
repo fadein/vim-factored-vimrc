@@ -44,6 +44,7 @@ set incsearch
 set isfname-==
 set keymodel=startsel,stopsel
 set laststatus=2 "make sure status line always appears, regardless of splits
+set linebreak
 set matchpairs=(:),{:},[:],<:>
 set matchtime=3
 set modeline  "activate modelines
