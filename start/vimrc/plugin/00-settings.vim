@@ -57,7 +57,7 @@ set shiftwidth=4
 set shortmess=aoOTt
 set showcmd
 set smartcase
-set smartindent
+set nosmartindent
 set spellfile=$HOME/.vim/spell/local.en.add
 set spellsuggest=best,5
 set splitbelow
