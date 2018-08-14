@@ -84,7 +84,7 @@ inoremap # X#
 if has('syntax')
     syntax enable
     highlight Folded      term=standout ctermfg=12 ctermbg=None
-    "highlight CursorLine term=underline cterm=underline ctermfg=None
+    highlight CursorLine term=underline cterm=underline ctermfg=11
 endif
 
 if has('eval')
