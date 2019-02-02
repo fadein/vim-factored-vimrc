@@ -4,7 +4,6 @@ endif
 
 " all of this stuff can go under the respective plugin's pack
 
-let g:obviousModeInsertHi = 'gui=reverse'
 let g:loaded_lustyjuggler = 1
 let g:ZO_syntaxhighlight = 1
 let g:ZO_sleepdelay = '50m'
