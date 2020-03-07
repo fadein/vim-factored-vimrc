@@ -2,7 +2,7 @@ if ! has('autocmd')
     finish
 endif
 
-autocmd BufRead *.frag,*.ig,*.md setlocal filetype=markdown spell isfname-=#
+autocmd BufRead *.beat,*.frag,*.ig,*.md setlocal filetype=markdown spell isfname-=#
 autocmd BufRead *.xsl,*.xslt,*.xml,*.htm,*.html,*.xsd,*.tas setlocal filetype=xml
 autocmd FileType xdefaults setlocal commentstring=!%s
 autocmd FileType {xml,xslt} setlocal iskeyword=$,@,-,\:,48-57,_,128-167,224-235 
