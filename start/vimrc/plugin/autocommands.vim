@@ -4,7 +4,7 @@ endif
 
 " Markdown haxing
 autocmd BufRead *.frag,*.ig,*.beat setlocal filetype=markdown
-autocmd FileType markdown setlocal isfname-=#
+autocmd FileType markdown setlocal spell isfname-=#
 
 autocmd BufRead *.xsl,*.xslt,*.xml,*.htm,*.html,*.xsd,*.tas setlocal filetype=xml
 autocmd FileType xdefaults setlocal commentstring=!%s
