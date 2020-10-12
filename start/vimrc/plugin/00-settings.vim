@@ -70,6 +70,7 @@ set tags=tags
 set undodir=$HOME/.vim/undo
 set undofile
 set viminfo='100,<50,s10,h,n~/.vim/viminfo
+set virtualedit=block
 set whichwrap=b,s,<,>,[,]
 set nowildmenu
 set wildmode=list:longest,full
