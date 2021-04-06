@@ -30,7 +30,7 @@ set cpoptions=BadFAces
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 set cscopetag
 set cursorline
-set directory^=/dev/shm
+set directory^=~/.vim/swp//
 set expandtab
 set nofoldenable
 set formatoptions=tcqron
