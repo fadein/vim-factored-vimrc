@@ -29,7 +29,7 @@ set nocompatible
 set cpoptions=BadFAces
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 set cscopetag
-set cursorline
+"set cursorline
 set directory^=~/.vim/swp//
 set expandtab
 set nofoldenable
@@ -63,7 +63,7 @@ set spellsuggest=best,5
 set splitbelow
 set splitright
 set nostartofline
-set statusline=%m%f\ \ %y%r%w\ %=%l/%L\ %P
+set statusline=%m%f%a\ %y%r%w\ %=%l/%L\ %P
 set switchbuf=useopen
 set tabstop=4
 set tags=tags
