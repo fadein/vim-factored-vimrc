@@ -20,5 +20,5 @@ function! MarkdownLevel()
     return "=" 
 endfunction
 
-au BufEnter *.ig,*.frag,*.md setlocal foldexpr=MarkdownLevel()
-au BufEnter *.ig,*.frag,*.md setlocal foldmethod=expr
+au BufEnter *.beat,*.ig,*.frag,*.md setlocal foldexpr=MarkdownLevel()
+au BufEnter *.beat,*.ig,*.frag,*.md setlocal foldmethod=expr
