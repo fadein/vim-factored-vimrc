@@ -29,7 +29,7 @@ set nocompatible
 set cpoptions=BadFAces
 set cscopequickfix=s-,c-,d-,i-,t-,e-
 set cscopetag
-"set cursorline
+set cursorline
 set directory^=~/.vim/swp//
 set expandtab
 set nofoldenable
