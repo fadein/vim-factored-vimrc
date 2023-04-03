@@ -13,8 +13,7 @@ command! -nargs=? -bar Underline    :put =repeat( len('<args>') > 0 ? '<args>' :
 command! -nargs=0 Max       :let [s:lines, s:columns] = [&lines, &columns] | set lines=999 columns=999
 command! -nargs=0 Taller    :let [s:lines, s:columns] = [&lines, &columns] |set lines=999
 command! -nargs=0 Wider     :let [s:lines, s:columns] = [&lines, &columns] |set columns=999
-command! -nargs=0 Restore  :let [s:lines, s:columns, &lines, &columns] = [&lines, &columns, s:lines, s:columns]
-command! -nargs=0 Merge /^\(<\|=\|>\)\{7}\ze\(\s\|$\)/
+command! -nargs=0 Restore   :let [s:lines, s:columns, &lines, &columns] = [&lines, &columns, s:lines, s:columns]
+command! -nargs=0 Merge     /^\(<\|=\|>\)\{7}\ze\(\s\|$\)/
 
 " vim:filetype=vim sw=4 foldmethod=marker tw=78 expandtab:
-
