@@ -23,6 +23,7 @@ set autoindent
 set autowrite "writes file before I :make it
 set backspace=indent,eol,start "lets you use backspace on previously inserted words
 set nobackup
+set belloff=all
 set nocindent
 set comments=s1:/*,mbx:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:- " is this right?
 set nocompatible
